@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/vendor/font-awesome/all.min.css">
+    <link rel="stylesheet" href="/vendor/index.css">
+    <link rel="stylesheet" href="/vendor/roboto.css">
+
+    <!-- SEO -->
+    <title>Rasmus Møhring | Web developer @ Webitall</title>
+    <meta name="Description" content="Rasmus Møhring is developing applications for web and mobile">
+    <link href="https://mohring.dk/" rel="canonical">
+    <link rel="icon" href="/images/icons/icon-128x128.png" type="image/png" />
+
+    <!-- PWA -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#000000">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Rasmus Møhring">
+    <link rel="apple-touch-icon" href="/images/icons/icon-152x152.png">
+</head>
+
+<body>
+    <img id="profile" alt="Profile" src="/images/profile.jpg">
+    <h1>RASMUS MØHRING</h1>
+    <h5>Web developer @ Webitall</h5>
+    <div id="line"></div>
+    <div id="icons">
+        <a href="https://twitter.com/RasmusMohring" title="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="https://play.google.com/store/apps/dev?id=5299020273034773564" title="Google Play"><i class="fab fa-google-play"></i></a>
+        <a href="https://www.linkedin.com/in/rasmus-m%C3%B8hring-madsen-29b05a67/" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/Rasmusmm96" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="mailto:rasmusmohring@gmail.com" title="E-mail"><i class="fas fa-at"></i></a>
+    </div>
+    <div class="box">
+        <a href="/partymode" id="partymode">Partymode</a>
+    </div>
+</body>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-147618476-1"></script>
+<script>
+    // PWA
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('/sw.js')
+                .then((reg) => {
+                    console.log('Service worker registered.', reg);
+                });
+        });
+    }
+
+    // Google Analytics
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-147618476-1');
+</script>
+
+</html>

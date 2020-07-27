@@ -1,0 +1,74 @@
+body {
+    background: #000;
+    height: 100%;
+}
+
+#profile {
+    width: 300px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 50%;
+}
+
+#hat {
+    width: 300px;
+    display: block;
+    margin: 20px auto;
+}
+
+h1,
+h5 {
+    display: table;
+    margin: 5px auto;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
+#icons {
+    font-size: 3rem;
+    display: table;
+    margin: 0 auto;
+}
+
+a {
+    color: #ffffff;
+}
+
+a:hover {
+    color: #383a3e;
+}
+
+i {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#line {
+    background: #ffffff;
+    height: 2px;
+    width: 100px;
+    display: block;
+    margin: 20px auto;
+}
+
+.box {
+    color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+#partymode,
+#partymode:hover {
+    color: #000000;
+}
