@@ -1,4 +1,4 @@
-const CACHE_NAME = 'mo-cache-v3';
+const CACHE_NAME = 'mo-cache-v4';
 const FILES_TO_CACHE = [
     '/index.html',
     '/vendor/font-awesome/all.min.css',
@@ -14,7 +14,7 @@ const FILES_TO_CACHE = [
     '/vendor/webfonts/fa-solid-900.ttf',
     '/vendor/webfonts/fa-solid-900.woff',
     '/vendor/webfonts/fa-solid-900.woff2',
-    '/images/profile.jpg'
+    '/images/profile.webp'
 ];
 
 self.addEventListener('install', e => {
