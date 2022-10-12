@@ -1,19 +1,7 @@
-const CACHE_NAME = 'mo-cache-v4';
+const CACHE_NAME = 'mo-cache-v5';
 const FILES_TO_CACHE = [
     '/index.html',
-    '/vendor/font-awesome/all.min.css',
-    '/vendor/index.css',
-    '/vendor/roboto.css',
-    '/vendor/webfonts/fa-brands-400.eot',
-    '/vendor/webfonts/fa-brands-400.svg',
-    '/vendor/webfonts/fa-brands-400.ttf',
-    '/vendor/webfonts/fa-brands-400.woff',
-    '/vendor/webfonts/fa-brands-400.woff2',
-    '/vendor/webfonts/fa-solid-900.eot',
-    '/vendor/webfonts/fa-solid-900.svg',
-    '/vendor/webfonts/fa-solid-900.ttf',
-    '/vendor/webfonts/fa-solid-900.woff',
-    '/vendor/webfonts/fa-solid-900.woff2',
+    '/style.css',
     '/images/profile.webp'
 ];
 

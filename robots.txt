@@ -1,3 +1,2 @@
 User-agent: *
-Disallow: /old/
 Disallow: /en/
