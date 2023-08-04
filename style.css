@@ -30,13 +30,15 @@ h2 {
     font-size: 1.25rem;
 }
 
-.icons {
+.icons-container {
     display: flex;
     justify-content: center;
 }
 
-.icons a {
-    margin: 0 10px;
+.icons {
+    display: flex;
+    width: 350px;
+    justify-content: space-between;
 }
 
 .icons a svg {
@@ -57,14 +59,13 @@ h2 {
     margin: 20px auto;
 }
 
-.box {
-    color: #ffffff;
-    position: absolute;
-    bottom: 0;
-    right: 0;
+.x {
+    font-size: 66px;
+    text-decoration: none;
+    color: #fff;
+    margin-top: -14px !important;
 }
 
-#partymode,
-#partymode:hover {
-    color: #000000;
+.x:hover {
+    color: #383a3e;
 }
