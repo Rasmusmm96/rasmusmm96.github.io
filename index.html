@@ -76,13 +76,25 @@
 
 <script>
 	// PWA
+    Notification.requestPermission().then(res => console.log('Notification permission:', res));
+
+	window.addEventListener('push', async evt => {
+		console.log(evt)
+	})
+
 	if ('serviceWorker' in navigator) {
-		window.addEventListener('load', () => {
-			navigator.serviceWorker.register('/sw.js')
-				.then((reg) => {
-					console.log('Service worker registered.', reg);
-				});
+		self.addEventListener('load', async () => {
+			await navigator.serviceWorker.register('/sw.js')
+			const reg = await navigator.serviceWorker.ready;
+
+            await reg.pushManager.subscribe({
+				userVisibleOnly: true,
+                applicationServerKey: 'BPXg_WrGVqWAdBkV-PdqcQaptb1-PrkNz1LXcbE-w-fe0zUL5rNpsZ3ZTatFtKcbXjYeW-0wMjjXRnVmXlst6zI'
+            })
+
 		});
+
+
 	}
 </script>
 
