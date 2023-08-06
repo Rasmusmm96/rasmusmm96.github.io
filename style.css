@@ -10,6 +10,7 @@ body {
     margin: 20px auto;
     border-radius: 50%;
     object-fit: cover;
+    animation: fade-in 2s;
 }
 
 h1,
@@ -20,6 +21,7 @@ h2 {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     line-height: 1.2;
+    animation: fade-in 2s;
 }
 
 h1 {
@@ -28,6 +30,15 @@ h1 {
 
 h2 {
     font-size: 1.25rem;
+}
+
+.line {
+    background: #ffffff;
+    height: 2px;
+    width: 100px;
+    display: block;
+    margin: 20px auto;
+    animation: fade-in 2s;
 }
 
 .icons-container {
@@ -41,6 +52,13 @@ h2 {
     justify-content: space-between;
 }
 
+.icons a {
+    opacity: 0;
+    animation-name: fade-in;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
 .icons a svg {
     height: 48px;
     width: 48px;
@@ -51,21 +69,35 @@ h2 {
     fill: #383a3e;
 }
 
-.line {
-    background: #ffffff;
-    height: 2px;
-    width: 100px;
-    display: block;
-    margin: 20px auto;
-}
-
 .x {
     font-size: 66px;
     text-decoration: none;
     color: #fff;
     margin-top: -14px !important;
+    animation-delay: 1000ms;
+}
+.play {
+    animation-delay: 1100ms;
+}
+.linkedin {
+    animation-delay: 1200ms;
+}
+.github {
+    animation-delay: 1300ms;
+}
+.mail {
+    animation-delay: 1400ms;
 }
 
 .x:hover {
     color: #383a3e;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 100%;
+    }
 }
