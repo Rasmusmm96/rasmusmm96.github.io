@@ -76,6 +76,10 @@ h2 {
     margin-top: -14px !important;
     animation-delay: 1000ms;
 }
+.x:hover {
+    color: #383a3e;
+}
+
 .play {
     animation-delay: 1100ms;
 }
@@ -87,10 +91,6 @@ h2 {
 }
 .mail {
     animation-delay: 1400ms;
-}
-
-.x:hover {
-    color: #383a3e;
 }
 
 @keyframes fade-in {
