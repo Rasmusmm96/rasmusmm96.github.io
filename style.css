@@ -73,8 +73,11 @@ h2 {
     animation-delay: 1000ms;
 }
 
-.icons a svg:hover, .x:hover {
+.icons a svg:hover {
     fill: #383a3e;
+}
+.x:hover {
+    color: #383a3e;
 }
 
 .play {
